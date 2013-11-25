@@ -30,12 +30,6 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhead user_debug=31 maxcpus=2 msm_watchdog_v2.enable=1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 
-# Kernel inline build
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-TARGET_KERNEL_CONFIG := hammerhead_defconfig
-TARGET_VARIANT_CONFIG := hammerhead_defconfig
-TARGET_SELINUX_CONFIG := hammerhead_defconfig
-
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
 # Increase the size if shaders of size greater than 12KB are used.
@@ -108,7 +102,7 @@ BOARD_CUSTOM_BOOTIMG_MK := device/lge/hammerhead/mkbootimg.mk
 
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/google/msm
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION := \
