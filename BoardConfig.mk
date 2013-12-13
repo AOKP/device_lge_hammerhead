@@ -102,7 +102,7 @@ BOARD_SEPOLICY_DIRS := \
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/hammerhead/mkbootimg.mk
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := hammerhead_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 # The list below is order dependent
