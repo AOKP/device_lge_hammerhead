@@ -111,6 +111,7 @@ TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 BOARD_SEPOLICY_UNION := \
        device.te \
        app.te \
+       netd.te \
        file_contexts
 
 HAVE_ADRENO_SOURCE:= false

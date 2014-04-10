@@ -1,0 +1,2 @@
+# TODO: why this is needed in AOKP to share WiFi
+allow netd dhcp_data_file:dir rw_dir_perms;
