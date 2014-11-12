@@ -217,6 +217,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bdAddrLoader
 
+<<<<<<< HEAD
 # msm_rng entropy feeder
 PRODUCT_PACKAGES += \
     qrngd \
@@ -224,6 +225,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     power.hammerhead
+=======
+# QCOM Perf lib
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
+>>>>>>> b4e9847... hammerhead: Use QCOM PowerHAL
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
