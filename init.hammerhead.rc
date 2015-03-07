@@ -58,6 +58,7 @@ on early-boot
     setrlimit 8 67108864 67108864
 
 on boot
+    setenforce 0
     # Enable DEBUG_SUSPEND, DEBUG_EXIT_SUSPEND, and DEBUG_WAKEUP
     write /sys/module/wakelock/parameters/debug_mask 7
 

@@ -5,6 +5,8 @@ type rmt_exec, exec_type, file_type;
 # Started by init
 init_daemon_domain(rmt)
 
+permissive rmt;
+
 # Drop (user, group) to (nobody, nobody)
 allow rmt self:capability { setuid setgid };
 
@@ -30,3 +32,6 @@ wakelock_use(rmt)
 
 # Allow access to /dev/uio0.
 allow rmt uio_device:chr_file rw_file_perms;
+
+#fix avc: denied { read write } for name="mem" dev="tmpfs" ino=5701 scontext=u:r:rmt:s0 tcontext=u:object_r:kmem_device:s0 tclass=chr_file
+allow rmt kmem_device:chr_file rw_file_perms;
