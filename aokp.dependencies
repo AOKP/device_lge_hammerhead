@@ -1,0 +1,20 @@
+[
+ {
+   "remote": "cm",
+   "repository": "Cyanogenmod/android_kernel_lge_hammerhead",
+   "target_path": "kernel/lge/hammerhead",
+   "revision": "cm-13.0"
+ },
+  {
+   "remote": "cm",
+   "repository": "Cyanogenmod/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "revision": "cm-13.0"
+  },
+ {
+   "remote": "tm",
+   "repository": "proprietary_vendor_lge",
+   "target_path": "vendor/lge",
+   "revision": "cm-13.0"
+ }
+]
